@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://news59.com/wp-content/uploads/2023/11/Happy-New-Year-2024-Wishes-1024x536.png");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner {
+    height: 100vh;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 550px;
+    }
+}
+.bubble img{
+    width: 50%;
+    animation: bubble 7s linear infinite;
+}
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translatex(40vh);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    } 
+    70%{
+        opacity: 1;
+    } 
+    100%{
+        transform: translateY(-50vh);
+        opacity: 0;
+    }
+}
+
+
+        
